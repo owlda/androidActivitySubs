@@ -9,17 +9,17 @@
 
     <ListView
         android:id="@+id/lvItems"
-        android:layout_width="403dp"
-        android:layout_height="498dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="410dp"
+        android:layout_height="602dp"
+        android:layout_marginTop="2dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/button"
         tools:ignore="MissingConstraints"></ListView>
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
-        android:layout_width="447dp"
-        android:layout_height="92dp"
+        android:layout_width="421dp"
+        android:layout_height="65dp"
         android:background="#353538"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
@@ -29,11 +29,16 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create"
-        app:layout_constraintEnd_toStartOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toEndOf="@+id/toolbar"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="423dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:text="Create new subscruber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

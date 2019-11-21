@@ -28,10 +28,11 @@ public class MainActivity extends AppCompatActivity {
         Button create = findViewById(R.id.button);
 
         Intent i = getIntent();
-        User addedUser = new User(i.getStringExtra("NameUser"), i.getStringExtra("SurnameUser"),
-                i.getStringExtra("AgeUser"),i.getStringExtra("EMAILUser"));
-
-        arrayOfUsers.add(addedUser);
+        if(i.getStringExtra("NameUser") != null){
+            User addedUser = new User(i.getStringExtra("NameUser"), i.getStringExtra("SurnameUser"),
+                    i.getStringExtra("AgeUser"),i.getStringExtra("EMAILUser"));
+            arrayOfUsers.add(addedUser);
+        }
 
 
          // Create the adapter to convert the array to views
